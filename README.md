@@ -1,5 +1,5 @@
-Deploy the `piksi_firmware` build
-=================================
+Deploy the `piksi_firmware` or `nap` build
+==========================================
 
 Performs the following steps:
 
@@ -10,7 +10,7 @@ Performs the following steps:
 Usage
 -----
 
-Call `./deploy.sh` from CI server.
+Call `./deploy.sh STM` or `./deploy.sh NAP` from CI server.
 
 Pre-requisites
 --------------
@@ -27,7 +27,7 @@ Expects the files to be uploaded are in a directory called `artifacts/` and
 there is exactly one `.hex` file present (to which `index.json` will be
 pointed).
 
-The file `VERSION` in the `artifacts/` directory will be moved to the root and
-will not be uploaded.
+The file `VERSION` or `HDL_VERSION` in the `artifacts/` directory will be moved
+to the root and will not be uploaded.
 
 

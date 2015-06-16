@@ -23,7 +23,7 @@ else:
   sys.exit('`firmware` argument should be "STM" or "NAP"')
 
 # Extract version name from VERSION file
-vf = open(VERSION_FNAME, 'r')
+vf = open(version_fname, 'r')
 version = vf.read().strip().split('=')[1]
 vf.close()
 

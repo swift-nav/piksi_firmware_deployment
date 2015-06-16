@@ -12,12 +12,11 @@ parser = argparse.ArgumentParser(description='Update index.json')
 parser.add_argument('firmware', default="STM",
                     help='which firmware is to be uploaded (`STM` or `NAP`)')
 args = parser.parse_args()
-print args.firmware
 
-if args._firmware == "STM":
+if args.firmware == "STM":
   version_fname = 'VERSION'
   fw_key = 'stm_fw'
-elif args._firmware == "NAP":
+elif args.firmware == "NAP":
   version_fname = 'HDL_VERSION'
   fw_key = 'nap_fw'
 else:
